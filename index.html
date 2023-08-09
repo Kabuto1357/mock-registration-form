@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Youth Soccer Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="ball-icon.png">
+  </head>
+  <body>
+    <h1>Youth Soccer Registration Form</h1>
+    <p>Each player will recieve: Jersey, Shorts, and Socks</p>
+    <p>This is a mock youth registration form project.</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Player First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Player Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="player-age">Age of player: <input id="player-age" name="player-age" type="number" min="5" max="18"  required /></label>
+        <label for="email">Parent Email: <input id="email" name="email" type="email" required /></label>
+        <label for="phone-number">Preferred Phone: (No dashes) <input id="phone-number" name="phone-number" type="tel" maxlength="10" required /></label>
+      </fieldset>
+      <fieldset>
+        <label>Select one:</label>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" />New Player</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" />Returning Player</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload medical concerns player has (If applicable):<input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Preferred Coach Name:<input id="coach" type="text" name="coach"/></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Heard on TV</option>
+            <option value="2">Reccomended from a friend</option>
+            <option value="3">Heard from school</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">If other, please state:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="How did you hear bout us?"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
